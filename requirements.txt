@@ -1,0 +1,8 @@
+numpy==1.24.0
+librosa==0.10.1
+torch==2.4.1+cu124
+torchvision==0.19.1+cu124
+scikit-learn==1.2.2
+matplotlib==3.5.1
+PyWavelets==1.5.0
+d2l==0.17.6
