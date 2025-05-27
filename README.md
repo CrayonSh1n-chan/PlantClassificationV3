@@ -1,8 +1,8 @@
-# **PlantClassificationV3**
-机器学习模型，用于分类从全消声室环境中采集到的植物发声信号。
+# **SoundClassification**
+搭建机器学习模型进行声学时间分类。声学场景包括：全消声室环境中采集到的植物发声信号，吞咽障碍病患发声，城市噪声数据集UrbanSound8K
 
 ### 项目简介  
-PlantClassficationV3 是一个基于机器学习的项目，旨在对从全消声室环境中采集的植物发声信号进行分类。通过使用先进的音频处理技术和机器学习模型，项目能够帮助研究植物在不同环境压力下的声学反应，探索其与植物健康和生长状况的关系。
+SoundClassification是一个基于机器学习的项目，旨在对从多种声学场景下的声学事件进行分类。通过使用先进的音频处理技术和机器学习模型，搭建声学事件分类的智能系统。
 
 下图展示了本实验组通过摄像机捕捉到的植物发声瞬间：
 <div align="center">
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 推荐使用基于Pytorch的开发框架<https://pytorch.org/>
 ### 数据说明及准备         
-植物发声数据以单通道wav文件格式存储，默认采样率为320000Hz，时长为4ms。将植物发声数据集放置在指定的目录下，每个类别的数据分别存放在不同的文件夹中，文件夹名称即为标签。确保数据的组织方式如下：  
+数据主要以wav文件格式保存在类别文件夹下，例如：植物发声数据以单通道wav文件格式存储，默认采样率为320000Hz，时长为4ms。将植物发声数据集放置在指定的目录下，每个类别的数据分别存放在不同的文件夹中，文件夹名称即为标签。确保数据的组织方式如下：  
 ```bash
 /dataset/
     /class1/
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ### 使用说明
 1.将项目克隆到本地：
 ```bash
-git clone https://github.com/CrayonSh1n-chan/PlantClassificationV3.git
+git clone https://github.com/CrayonSh1n-chan/SoundClassification.git
 ```
 2.安装依赖：
 ```bash
